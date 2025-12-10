@@ -5,7 +5,7 @@ these two lines in ct_mem.v were included: */
 /* This testbench displays the pt_mem contents to be verified qualitatively to ensure 
 that there is a valid ASCII message. */
 `timescale 1ps/1ps
-module tb_syn_task4();
+module tb_syn_toplevel();
 
     // DUT input and output signals:
     logic clk;
@@ -14,7 +14,7 @@ module tb_syn_task4();
     logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
 
     // instantiate DUT
-    task4 DUT(.CLOCK_50(clk), .KEY(KEY), .SW(SW), .HEX0(HEX0), .HEX1(HEX1), .HEX2(HEX2),
+    toplevel DUT(.CLOCK_50(clk), .KEY(KEY), .SW(SW), .HEX0(HEX0), .HEX1(HEX1), .HEX2(HEX2),
              .HEX3(HEX3), .HEX4(HEX4), .HEX5(HEX5), .LEDR(LEDR));
 
     // Debugging signals:
@@ -49,4 +49,4 @@ module tb_syn_task4();
     end
 
 
-endmodule: tb_syn_task4
+endmodule: tb_syn_toplevel
