@@ -16,7 +16,7 @@
 `define display_E 7'b0110000   // E
 `define display_F 7'b0111000   // F
 
-module task4(input logic CLOCK_50, input logic [3:0] KEY, input logic [9:0] SW,
+module toplevel(input logic CLOCK_50, input logic [3:0] KEY, input logic [9:0] SW,
              output logic [6:0] HEX0, output logic [6:0] HEX1, output logic [6:0] HEX2,
              output logic [6:0] HEX3, output logic [6:0] HEX4, output logic [6:0] HEX5,
              output logic [9:0] LEDR);
@@ -181,4 +181,4 @@ module task4(input logic CLOCK_50, input logic [3:0] KEY, input logic [9:0] SW,
         en = (present_state == START);  
     end
 
-endmodule: task4
+endmodule: toplevel
