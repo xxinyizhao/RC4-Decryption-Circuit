@@ -1,6 +1,6 @@
 # FPGA ARC4/RC4 Decryption Circuit & Key Cracker
 
-Hardware implementation of the ARC4 stream cipher on an Altera DE1-SoC FPGA, including a brute-force key search engine and a parallel “multi-crack” accelerator. The project uses on on-chip memory, hardware handshake microprotocols, and scalable digital design.
+Hardware implementation of the ARC4 stream cipher on an Altera DE1-SoC FPGA, including a brute-force key search engine and a parallel “multi-crack” accelerator. In this project, I implemented on-chip memory, hardware handshake microprotocols, and parallel decryption.
 
 ---
 
